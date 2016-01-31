@@ -1,20 +1,11 @@
-# Mule Webapp Sample
+# Mule embedded in Web Application Example
 
-This example demonstrates how to wrap a Mule application as a JavaEE web-application (WAR).
-
-It exists to address the following common issues:
-
-- Using HTTP instead of Servlet inbound endpoints,
-  which works but makes no sense because it bypasses the web tier from the web container
-  and starts a Mule HTTP server in it.
-- Trying to deploy Mule as a Tomcat service
-  (per [this guide](www.mulesoft.org/documentation/display/current/Deploying+Mule+as+a+Service+to+Tomcat)),
-  which is complex, does not bring tons of benefits as opposed to simply deploying a WAR.
+This example demonstrates how to embed Mule in a Java web-application (WAR).
 
 ## Running the demo
 
     mvn jetty:run
 
-You can then browse http://localhost:8889/mule-war-demo
+Browse to http://localhost:8889/mule-hello-world-war-example
 
-**Copyright © 2015 David Dossot - MIT License**
+Based on David Dossot's https://github.com/ddossot/mule-webapp-example
